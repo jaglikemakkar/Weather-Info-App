@@ -32,7 +32,7 @@ function showError(error){
 }
 
 function getWetherByCoordi(latitude, longitude){
-    var url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e5bb4db6fbf279a862f063bc7f2ea81e`;
+    var url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e5bb4db6fbf279a862f063bc7f2ea81e`;
     fetch(url)
     .then(function(response){
         var data = response.json();
